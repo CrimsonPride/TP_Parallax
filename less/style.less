@@ -253,15 +253,6 @@ a:hover {
   z-index: -3;
 }
 
-.parallax__layer--river {
-  position: fixed;
-  -webkit-transform: translateZ(-2px) scale(3);
-  -ms-transform: translateZ(-2px) scale(3);
-  transform: translateZ(-2px) scale(3);
-  background-image: url("../images/mounts_2.png");
-  margin-top: 95%;
-  z-index: -4;
-}
 
 .parallax__layer--back {
   position: fixed;
@@ -278,9 +269,19 @@ a:hover {
   -webkit-transform: translateZ(-4px) scale(5);
   -ms-transform: translateZ(-4px) scale(5);
   transform: translateZ(-4px) scale(5);
-  background-image: url("../images/cliff_1.png");
+  background-image: url("../img-svg/cliff_1.svg");
   margin-top: 95%;
-  z-index: -6;
+  z-index: -4;
+}
+
+.parallax__layer--river {
+  position: fixed;
+  -webkit-transform: translateZ(-2px) scale(3);
+  -ms-transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(3);
+  background-image: url("../img-svg/cliff_2.svg");
+  margin-top: 60%;
+  z-index: -5;
 }
 
 .parallax__layer--drone-a {
