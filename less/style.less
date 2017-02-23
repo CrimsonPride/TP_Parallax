@@ -11,6 +11,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@COULEUR-ARR:#817D72;
+
 
 html,
 body,
@@ -161,8 +163,8 @@ html {
 
 .content {
   position: relative;
-  background-color: #0f1629;
-  min-height: 500px;
+  background-color: @COULEUR-ARR;
+  min-height: 300px;
   width: 100%;
   font-family: "Arial";
   line-height: 40px;
@@ -170,7 +172,7 @@ html {
   font-size: 16px;
   margin: auto;
   text-align: center;
-  padding-top: 200px;
+  margin-top: 100%;
 }
 
 .content p {
@@ -178,30 +180,6 @@ html {
   text-align: center;
   padding: 50px;
   max-width: 900px;
-}
-
-a,
-a:visited,
-a:active {
-  color: inherit;
-}
-
-a:hover {
-  color: inherit;
-}
-
-.btn {
-  border-radius: 0px;
-  text-transform: uppercase;
-  border: 2px solid white;
-  font-size: 16px;
-  letter-spacing: 2px;
-  padding: 20px 50px;
-}
-
-.btn:hover {
-  background-color: white;
-  color: #0f1629;
 }
 
 /* Parallax base styles
@@ -248,7 +226,7 @@ a:hover {
   -webkit-transform: translateZ(-1px) scale(2);
   -ms-transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2);
-  background-image: url("../images/mounts_1.png");
+  
   margin-top: 78%;
   z-index: -3;
 }
@@ -256,43 +234,53 @@ a:hover {
 
 .parallax__layer--back {
   position: fixed;
-  -webkit-transform: translateZ(-3px) scale(4);
-  -ms-transform: translateZ(-3px) scale(4);
-  transform: translateZ(-3px) scale(4);
-  background-image: url("../images/mounts_3.png");
-  margin-top: 130%;
+  -webkit-transform: translateZ(-3px) scale(3);
+  -ms-transform: translateZ(-3px) scale(3);
+  transform: translateZ(-3px) scale(3);
+  background-image: url("../img-svg/cliff_3.svg");
+  margin-top: 95%;
   z-index: -5;
 }
 
-.parallax__layer--deep {
+.parallax__layer--rocher_1 {
   position: fixed;
-  -webkit-transform: translateZ(-4px) scale(5);
-  -ms-transform: translateZ(-4px) scale(5);
-  transform: translateZ(-4px) scale(5);
-  background-image: url("../img-svg/cliff_1.svg");
-  margin-top: 170%;
+  -webkit-transform: translateZ(-3px) scale(5);
+  -ms-transform: translateZ(-3px) scale(5);
+  transform: translateZ(-3px) scale(5);
+  background-image: url("../img-svg/cliff_1-2.svg");
+  margin-top: 150%;
   z-index: -4;
 }
 
-.parallax__layer--river {
+.parallax__layer--rocher_2 {
   position: fixed;
   -webkit-transform: translateZ(-2px) scale(3);
   -ms-transform: translateZ(-2px) scale(3);
   transform: translateZ(-2px) scale(3);
   background-image: url("../img-svg/cliff_2.svg");
-  margin-top: 130%;
+  margin-top: 190%;
   z-index: -5;
+}
+.parallax__layer--rocher_3 {
+  position: fixed;
+  -webkit-transform: translateZ(-2px) scale(3);
+  -ms-transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(3);
+  background-image: url("../img-svg/cliff_4.svg");
+  margin-top: 130%;
+  z-index: -6;
 }
 
 .parallax__layer--drone-a {
   position: fixed;
-  -webkit-transform: translateZ(0) scale(1);
-  -ms-transform: translateZ(0) scale(1);
-  transform: translateZ(0) scale(1);
-  background-image: url("../images/drone_a.png");
-  width: 38vw;
-  margin-top: 13%;
-  z-index: -7;
+  -webkit-transform: translateZ(-3px) scale(3);
+  -ms-transform: translateZ(-3px) scale(3);
+  transform: translateZ(-3px) scale(3);
+  background-image: url("../img-svg/buster-sword.svg");
+  width: 9vw;
+  margin-top: 50%;
+  margin-left: 50%;
+  z-index: -5;
 }
 
 .parallax__layer--drone-b {
@@ -335,7 +323,7 @@ a:hover {
 body,
 html {
   overflow: hidden;
-  background-color: #0f1629;
+  background-color:  @COULEUR-ARR;
 }
 
 body {
@@ -370,7 +358,7 @@ body {
   margin-top: 30%;
   width: 100%;
   height: 100%;
-  background-color: #0f1629;
+  background-color:  @COULEUR-ARR;
 }
 
 .scroll-fill {
