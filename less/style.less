@@ -12,6 +12,10 @@
    License: none (public domain)
 */
 @COULEUR-ARR:#817D72;
+@COULEUR-NOIR:#000000;
+@COULEUR-BLANC:#FFFFFF;
+
+
 
 
 html,
@@ -164,7 +168,7 @@ html {
 .content {
   position: relative;
   background-color: @COULEUR-ARR;
-  min-height: 300px;
+  min-height: 50px;
   width: 100%;
   font-family: "Arial";
   line-height: 40px;
@@ -283,6 +287,17 @@ html {
   z-index: -5;
 }
 
+.parallax__layer--meteore {
+  position: fixed;
+  -webkit-transform: translateZ(-3px) scale(3);
+  -ms-transform: translateZ(-3px) scale(3);
+  transform: translateZ(-3px) scale(3);
+  width: 9vw;
+  margin-top: 50%;
+  margin-left: 50%;
+  z-index: -5;
+}
+
 .parallax__layer--ap {
   -webkit-transform: translateZ(-5px) scale(6);
   -ms-transform: translateZ(-5px) scale(6);
@@ -302,6 +317,24 @@ html {
   bottom: 0px;
   background-color: transparent;
 }
+/* Gestion SVG -------------------------------*/
+  
+  .st0{opacity:0.4;fill:@COULEUR-BLANC;}
+  .st1{fill:url(#XMLID_16_);}
+  .st2{fill:#FCFDF9;}
+  .st3{fill:url(#XMLID_17_);stroke:@COULEUR-NOIR;stroke-width:0.25;stroke-miterlimit:10;}
+  .st4{fill:#87B2DC;}
+  .st5{opacity:0.14;fill:url(#XMLID_18_);stroke:@COULEUR-NOIR;stroke-width:0.25;stroke-miterlimit:10;}
+  .st6{opacity:0.41;fill:url(#XMLID_19_);stroke:@COULEUR-NOIR;stroke-width:0.25;stroke-miterlimit:10;}
+  .st7{opacity:0.41;fill:url(#XMLID_20_);stroke:@COULEUR-NOIR;stroke-width:0.25;stroke-miterlimit:10;}
+  .st8{opacity:0.41;fill:url(#XMLID_27_);stroke:@COULEUR-NOIR;stroke-width:0.25;stroke-miterlimit:10;}
+  .st9{opacity:0.41;fill:url(#XMLID_28_);stroke:@COULEUR-NOIR;stroke-width:0.25;stroke-miterlimit:10;}
+  .st10{fill:url(#XMLID_29_);stroke:@COULEUR-NOIR;stroke-width:0.25;stroke-miterlimit:10;}
+  .st11{fill:url(#XMLID_30_);stroke:@COULEUR-NOIR;stroke-width:0.25;stroke-miterlimit:10;}
+  .st12{fill:url(#XMLID_31_);stroke:@COULEUR-NOIR;stroke-width:0.25;stroke-miterlimit:10;}
+
+
+
 
 /* demo styles
 --------------------------------------------- */
